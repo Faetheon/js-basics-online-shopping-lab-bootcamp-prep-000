@@ -10,7 +10,11 @@ function setCart(c) {
 }
 
 function addToCart(item) {
+<<<<<<< HEAD
  item = {itemName: item};
+=======
+ item = {itemName: [item]};
+>>>>>>> c6b8b3eca13790c7ae1e5ff0a74cffa7c38c9c29
  item.itemPrice = Math.floor(Math.random()*100);
  cart.push(item);
  return `${item.itemName} has been added to your cart.`
@@ -44,6 +48,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+<<<<<<< HEAD
   let foundItem = false;
   console.log(item);
   for(let i = 0; i < cart.length; i++) {
